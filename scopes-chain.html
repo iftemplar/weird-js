@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weird JS</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function a() {
+	function b() {
+		var x;
+		console.log('b scope =' + x); // 2 because it is a child of a();
+	}
+	var x = 2;
+	console.log('a scope =' + x); // 2
+	b();
+}
+
+var x = 1;
+console.log('Global scope = ' + x);
+a();
+</script>
+</body>
+</html>
