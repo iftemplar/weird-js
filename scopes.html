@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weird JS</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// variable scope
+	function a() {
+		var x = 2;
+		console.log('Scope a  = ' + x);
+		b();
+	}
+	function b() {
+		var x;
+		console.log('Scope b = ' + x);
+	}
+
+	var x = 1;
+	console.log('Global scope = ' + x);
+	a();
+  console.log('Global scope after launching function a() = ' + x); // still 1 because local (fucntions') scope doesn't change the global
+</script>
+</body>
+</html>
