@@ -1,5 +1,4 @@
-# weird-js
-## Javascript: understanding the weird parts
+# Javascript: understanding the weird parts
 
 ## asynchronous-js.html
 Despite click was done before the end of the execution stack, 
